@@ -3,6 +3,7 @@ log_guid: "routing-api"
 <% if p("routing-api.auth_disabled") == false %>
 uaa_verification_key: |
 <%= "  " + properties.uaa.jwt.verification_key.gsub("\n", "\n  ") %>
+uaa_url: <%= "http://uaa.service.cf.internal:#{properties.uaa.port}" %>
 <% end %>
 <% if_p("metron_endpoint.host", "metron_endpoint.dropsonde_port") do |host, port| %>
 metron_config:

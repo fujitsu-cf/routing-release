@@ -38,7 +38,9 @@ properties:
     description: "The IPs of etcd hosts"
   uaa.jwt.verification_key:
     description: "The verification key for UAA"
-
+  uaa.port:
+    description: "Port on which UAA is running"
+    default: 8080
   metron_endpoint.host:
     description: "The host used to emit messages to the Metron agent."
     default: "127.0.0.1"
