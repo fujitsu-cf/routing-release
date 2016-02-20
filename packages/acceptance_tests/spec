@@ -3,6 +3,7 @@ name: acceptance_tests
 
 dependencies:
   - golang1.5
+  - routing_api_cli
 
 files:
   - github.com/cloudfoundry-incubator/cf-tcp-router-acceptance-tests/bin/*
@@ -20,7 +21,10 @@ files:
   - github.com/cloudfoundry-incubator/cf-tcp-router-acceptance-tests/assets/tcp-sample-sender/*.go # gosub
   - github.com/cloudfoundry-incubator/cf-tcp-router-acceptance-tests/helpers/*.go # gosub
   - github.com/cloudfoundry-incubator/cf-tcp-router-acceptance-tests/router/*.go # gosub
+  - github.com/cloudfoundry-incubator/cf-tcp-router-acceptance-tests/routing_api/*.go # gosub
   - github.com/cloudfoundry-incubator/cf-tcp-router/testutil/*.go # gosub
+  - github.com/cloudfoundry-incubator/cf-test-helpers/generator/*.go # gosub
+  - github.com/cloudfoundry-incubator/cf-test-helpers/helpers/*.go # gosub
   - github.com/cloudfoundry-incubator/cf_http/*.go # gosub
   - github.com/cloudfoundry-incubator/routing-api/*.go # gosub
   - github.com/cloudfoundry-incubator/routing-api/db/*.go # gosub

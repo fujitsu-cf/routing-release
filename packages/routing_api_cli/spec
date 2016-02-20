@@ -1,0 +1,26 @@
+---
+name: routing_api_cli
+
+dependencies:
+
+files:
+  - github.com/bmizerany/pat/*.go # gosub
+  - github.com/cloudfoundry-incubator/cf-lager/*.go # gosub
+  - github.com/cloudfoundry-incubator/cf_http/*.go # gosub
+  - github.com/cloudfoundry-incubator/routing-api/*.go # gosub
+  - github.com/cloudfoundry-incubator/routing-api-cli/*.go # gosub
+  - github.com/cloudfoundry-incubator/routing-api-cli/commands/*.go # gosub
+  - github.com/cloudfoundry-incubator/routing-api/db/*.go # gosub
+  - github.com/cloudfoundry-incubator/trace-logger/*.go # gosub
+  - github.com/cloudfoundry-incubator/uaa-token-fetcher/*.go # gosub
+  - github.com/cloudfoundry/gunk/workpool/*.go # gosub
+  - github.com/cloudfoundry/storeadapter/*.go # gosub
+  - github.com/cloudfoundry/storeadapter/etcdstoreadapter/*.go # gosub
+  - github.com/codegangsta/cli/*.go # gosub
+  - github.com/coreos/go-etcd/etcd/*.go # gosub
+  - github.com/nu7hatch/gouuid/*.go # gosub
+  - github.com/pivotal-golang/clock/*.go # gosub
+  - github.com/pivotal-golang/lager/*.go # gosub
+  - github.com/tedsuo/rata/*.go # gosub
+  - github.com/ugorji/go/codec/*.go # gosub
+  - github.com/vito/go-sse/sse/*.go # gosub
