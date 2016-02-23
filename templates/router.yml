@@ -197,6 +197,8 @@ properties:
       uaa_port: (( config_from_cf.uaa.port ))
       tcp_router_secret: (( config_from_cf.uaa.clients.tcp_router.secret ))
       log_level: (( property_overrides.router_configurer.log_level ))
+      uaa_ssl_port: (( config_from_cf.uaa.ssl.port ))
+      skip_oauth_tls_verification: (( property_overrides.router_configurer.skip_oauth_tls_verification))
       routing_api_auth_disabled: (( config_from_cf.routing-api.auth_disabled))
     tcp_emitter:
       bbs:
