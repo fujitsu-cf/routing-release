@@ -13,6 +13,4 @@ ls $BOSH_INSTALL_TARGET/src
 
 export GOPATH=${BOSH_INSTALL_TARGET}/src/github.com/cloudfoundry/gorouter/Godeps/_workspace:${BOSH_INSTALL_TARGET}
 
-#ls $GOPATH
-
 go install github.com/cloudfoundry/gorouter
