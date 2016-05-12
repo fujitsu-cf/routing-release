@@ -21,6 +21,9 @@ function sync_package() {
 
       for package in $(gosub list "$@"); do
         repo=$(echo ${2} | cut -f1-3 -d/)
+        if [ $bosh_pkg == "gorouter" ]; then
+          package="routing-release/src/${package}"
+        fi
         if [ -d "../../src/${repo}/Godeps/_workspace/src/${package}" ]; then
           package="${repo}/Godeps/_workspace/src/${package}"
         fi
