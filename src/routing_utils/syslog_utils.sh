@@ -9,8 +9,8 @@ function tee_output_to_sys_log() {
   local log_basename
   log_basename="$(basename "$0")"
 
-  chpst -u vcap:vcap exec > >(tee -a >(logger -p user.info -t "vcap.${log_basename}.stdout") | prepend_datetime >>"${log_dir}/${log_basename}.log")
-  chpst -u vcap:vcap exec 2> >(tee -a >(logger -p user.error -t "vcap.${log_basename}.stderr") | prepend_datetime >>"${log_dir}/${log_basename}.err.log")
+  exec > >(tee -a >(logger -p user.info -t "vcap.${log_basename}.stdout") | prepend_datetime >>"${log_dir}/${log_basename}.log")
+  exec 2> >(tee -a >(logger -p user.error -t "vcap.${log_basename}.stderr") | prepend_datetime >>"${log_dir}/${log_basename}.err.log")
 }
 
 function prepend_datetime() {
