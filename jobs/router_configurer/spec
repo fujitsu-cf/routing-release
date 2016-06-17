@@ -49,5 +49,6 @@ properties:
     description: "The port used to emit dropsonde messages to the Metron agent."
     default: 3457
 
-  routing.uaa.ca_cert:
+  uaa.ca_cert:
     decription : "Certificate authority for communication between clients and uaa."
+    default: ""

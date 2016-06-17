@@ -64,8 +64,9 @@ properties:
     description: "Host to ping for confirmation of DNS resolution"
     default: consul.service.cf.internal
 
-  routing.uaa.ca_cert:
+  uaa.ca_cert:
     decription : "Certificate authority for communication between clients and uaa."
+    default: ""
 
   uaa.tls_port:
     description: "Secure Port on which UAA is running."
