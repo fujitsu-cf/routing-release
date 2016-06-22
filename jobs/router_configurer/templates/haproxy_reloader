@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+/var/vcap/jobs/haproxy/bin/haproxy_ctl reload
