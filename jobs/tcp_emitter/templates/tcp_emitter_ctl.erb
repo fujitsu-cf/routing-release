@@ -6,6 +6,7 @@ CONF_DIR=/var/vcap/jobs/tcp_emitter/config
 PIDFILE=$RUN_DIR/tcp_emitter.pid
 
 source /var/vcap/packages/routing_utils/pid_utils.sh
+source /var/vcap/packages/routing_utils/syslog_utils.sh
 
 <% if p("bbs.require_ssl") %>
   bbs_sec_flags=" \

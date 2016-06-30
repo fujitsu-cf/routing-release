@@ -6,6 +6,7 @@ CONF_DIR=/var/vcap/jobs/router_configurer/config
 PIDFILE=$RUN_DIR/router_configurer.pid
 
 source /var/vcap/packages/routing_utils/pid_utils.sh
+source /var/vcap/packages/routing_utils/syslog_utils.sh
 
 case $1 in
 
